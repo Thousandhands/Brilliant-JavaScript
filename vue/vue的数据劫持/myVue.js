@@ -144,12 +144,9 @@ class Vue {
      * 把render里面的节点挂在我们选中的节点上面
      */
     _update() {
-        console.log('update!!!!!!!!');
         const $root = this.$render(this._createElement);
         api.replaceChild(this.$el, $root);
         this.$el = $root;
-        console.log(321);
-
     }
 
     /**
